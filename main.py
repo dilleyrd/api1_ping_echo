@@ -2,11 +2,13 @@
 # # A simple FastAPI application with ping and echo endpoints.
 #
 
-from fastapi import FastAPI
-from pydantic import BaseModel
-from typing import Optional
-from fastapi import HTTPException, Query
-from fastapi import Path
+# Import necessary libraries
+
+from fastapi import FastAPI                 # FastAPI framework, for building APIs, handling requests, and routing
+from pydantic import BaseModel              # Pydantic, for data validation and settings management using Python type annotations   
+from typing import Optional                 # Optional type hinting, for parameters that can be None
+from fastapi import HTTPException, Query    # HTTPException for error handling, Query for query parameter validation
+from fastapi import Path                    # Path for path parameter validation, used in the math endpoint
 
 # Create FastAPI instance
 app = FastAPI(title="API-1 Ping and Echo")
